@@ -35,7 +35,7 @@ const SideDrawer = () => {
                         <Link to="make-payment"> <li> <FaCreditCard className="icon"/> Make Payment</li></Link>
                         <Link to="history"> <li> <FaHistory className="icon"/>  Payment History</li></Link>
                         <Link to="profile"> <li> <FaUserAstronaut className="icon"/>  Profile</li></Link>
-                        <Link to="signin"> <li> <FaSignOutAlt className="icon"/>  Logout</li></Link>
+                        <Link to="signin"> <li> <FaSignOutAlt onClick={() => {sessionStorage.setItem("loginStatus", false);}} className="icon"/>  Logout</li></Link>
                     </ul>
 
                     <div className='user-desc'>
