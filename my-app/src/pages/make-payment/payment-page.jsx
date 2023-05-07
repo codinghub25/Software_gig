@@ -120,7 +120,7 @@ const MakePayment = () => {
           <input type="text" id="accountName" value={payments.account_name ?? "Account Name"} readOnly placeholder='Account Name' />
           
           <label htmlFor="narration">Narration</label>
-          <input type="text" id="narration"  onBlur={(event) => setNarration(event.target.value)} placeholder='whats the money for?' />
+          <input type="text" id="narration"  onBlur={(event) => setNarration(event.target.value)} placeholder='Whats the money for?' />
           
           <button type="submit">Submit</button>
         </form>
